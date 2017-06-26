@@ -58,6 +58,7 @@ LIBRARY_CRATE_TYPES = [
     "rlib",
     "dylib",
     "staticlib",
+    "proc-macro",
 ]
 
 # Used by rust_doc
