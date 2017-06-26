@@ -68,16 +68,16 @@ filegroup(
 def rust_repositories():
   native.new_http_archive(
       name = "rust_linux_x86_64",
-      url = "http://bazel-mirror.storage.googleapis.com/static.rust-lang.org/dist/rust-1.15.1-x86_64-unknown-linux-gnu.tar.gz",
-      strip_prefix = "rust-1.15.1-x86_64-unknown-linux-gnu",
-      sha256 = "b1e7c818a3cc8b010932f0efc1cf0ede7471958310f808d543b6e32d2ec748e7",
+      url = "https://static.rust-lang.org/dist/2017-06-25/rust-nightly-x86_64-unknown-linux-gnu.tar.gz",
+      strip_prefix = "rust-nightly-x86_64-unknown-linux-gnu",
+      sha256 = "4aeb6769881e386fcad55c517644aec36b58a308b5655742bd4415c2b6fb2843",
       build_file_content = RUST_LINUX_BUILD_FILE,
   )
 
   native.new_http_archive(
       name = "rust_darwin_x86_64",
-      url = "http://bazel-mirror.storage.googleapis.com/static.rust-lang.org/dist/rust-1.15.1-x86_64-apple-darwin.tar.gz",
-      strip_prefix = "rust-1.15.1-x86_64-apple-darwin",
-      sha256 = "38606e464b31a778ffa7d25d490a9ac53b472102bad8445b52e125f63726ac64",
+      url = "https://static.rust-lang.org/dist/2017-06-25/rust-nightly-x86_64-apple-darwin.tar.gz",
+      strip_prefix = "rust-nightly-x86_64-apple-darwin",
+      sha256 = "ed8fa569894eb6c8d52e0b1487cb2388d385eac6337f1844afd6e1d6756d6953",
       build_file_content = RUST_DARWIN_BUILD_FILE,
   )
